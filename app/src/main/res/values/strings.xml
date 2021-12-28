@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Food Maker</string>
+    <string name="food_activity">Food Activity</string>
+    <string name="content_description_media">food image to display</string>
+    <string name="title">Title of the food</string>
+    <string name="supporting_text">Description details here</string>
+    <string name="secondary_text">published by…</string>
+    <string name="list_all">list all</string>
 </resources>
