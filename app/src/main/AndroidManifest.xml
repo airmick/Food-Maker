@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodMaker">
+
         <activity
             android:name=".WelcomePage"
             android:exported="true">
@@ -42,8 +43,44 @@
             android:parentActivityName=".WelcomePage">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomePage" />
+        </activity>
+        <activity
+            android:name=".categoryActivities.LunchActivity"
+            android:exported="false"
+            android:label="Lunch"
+            android:parentActivityName=".WelcomePage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomePage"/>
+        </activity>
+        <activity
+            android:name=".categoryActivities.DinnerActivity"
+            android:exported="false"
+            android:label="Dinner"
+            android:parentActivityName=".WelcomePage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
                 android:value=".WelcomePage"/>
 
+        </activity>
+        <activity
+            android:name=".categoryActivities.DessertActivity"
+            android:exported="false"
+            android:label="Dessert"
+            android:parentActivityName=".WelcomePage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomePage"/>
+        </activity>
+        <activity
+            android:name=".categoryActivities.CocktailActivity"
+            android:exported="false"
+            android:label="Cocktail"
+            android:parentActivityName=".WelcomePage">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WelcomePage"/>
         </activity>
     </application>
 

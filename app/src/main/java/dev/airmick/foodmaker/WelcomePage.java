@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import dev.airmick.foodmaker.categoryActivities.CocktailActivity;
+import dev.airmick.foodmaker.categoryActivities.DessertActivity;
+import dev.airmick.foodmaker.categoryActivities.DinnerActivity;
+import dev.airmick.foodmaker.categoryActivities.LunchActivity;
+
 public class WelcomePage extends AppCompatActivity {
     private TextView listAllTextView;
     private TextView breakfast_textView;
@@ -39,5 +44,44 @@ public class WelcomePage extends AppCompatActivity {
             }
         });
 
+        // Lunch Activity launcher
+        lunch_textView = findViewById(R.id.lunch_textview);
+        lunch_textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent lunchIntent = new Intent(WelcomePage.this, LunchActivity.class);
+                startActivity(lunchIntent);
+            }
+        });
+
+        // Dinner Activity launcher
+        dinner_textView = findViewById(R.id.dinner_textview);
+        dinner_textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent dinnerIntent = new Intent(WelcomePage.this, DinnerActivity.class);
+                startActivity(dinnerIntent);
+            }
+        });
+
+        //Dessert Activity launcher
+        dessert_textView = findViewById(R.id.desserts_textview);
+        dessert_textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent dessertIntent = new Intent(WelcomePage.this, DessertActivity.class);
+                startActivity(dessertIntent);
+            }
+        });
+
+        // Cocktail Activity launcher
+        cocktail_textView = findViewById(R.id.cocktails_textview);
+        cocktail_textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cocktailIntent = new Intent(WelcomePage.this, CocktailActivity.class);
+                startActivity(cocktailIntent);
+            }
+        });
     }
 }
