@@ -13,42 +13,19 @@ import java.util.List;
 import dev.airmick.foodmaker.Food;
 import dev.airmick.foodmaker.FoodAdapter;
 import dev.airmick.foodmaker.R;
+import dev.airmick.foodmaker.categoryFragments.BreakfastFragment;
+import dev.airmick.foodmaker.categoryFragments.LunchFragment;
 
 public class LunchActivity extends AppCompatActivity {
-
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
-
-    private List<Food> foodList = Arrays.asList(
-            new Food("Apple", "fruits",
-                    R.drawable.lunch_one),
-            new Food("Orange", "my favorite one",
-                    R.drawable.lunch_two),
-            new Food("Pineapple", "once eaten never get tired of it.",
-                    R.drawable.lunch_three),
-            new Food("Coconut", "dark fruits",
-                    R.drawable.lunch_five),
-            new Food("Tomatoes", "my favorite one again",
-                    R.drawable.lunch_six),
-            new Food("Lemon", "very interesting fruit.",
-                    R.drawable.lunch_one)
-    );
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        recyclerView = findViewById(R.id.recycle_view);
-        adapter = new FoodAdapter(foodList, R.color.lunch_color);
-        layoutManager = new LinearLayoutManager(this);
-
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(layoutManager);
-
-        DividerItemDecoration mDividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
-                1);
-        recyclerView.addItemDecoration(mDividerItemDecoration);
+        setContentView(R.layout.fragment_breakfast);
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, new LunchFragment())
+                    .commit();
+        }
     }
 }
