@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodMaker">
-
         <activity
-            android:name=".WelcomePage"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,67 +19,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:parentActivityName=".WelcomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomePage" />
-        </activity>
-        <activity
             android:name=".FoodActivity"
             android:exported="false"
-            android:label="@string/food_activity"
             android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".BreakfastActivity"
-            android:exported="false"
-            android:label="Breakfast"
-            android:parentActivityName=".WelcomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomePage" />
-        </activity>
-        <activity
-            android:name=".categoryActivities.LunchActivity"
-            android:exported="false"
-            android:label="Lunch"
-            android:parentActivityName=".WelcomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomePage"/>
-        </activity>
-        <activity
-            android:name=".categoryActivities.DinnerActivity"
-            android:exported="false"
-            android:label="Dinner"
-            android:parentActivityName=".WelcomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomePage"/>
 
-        </activity>
-        <activity
-            android:name=".categoryActivities.DessertActivity"
-            android:exported="false"
-            android:label="Dessert"
-            android:parentActivityName=".WelcomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomePage"/>
-        </activity>
-        <activity
-            android:name=".categoryActivities.CocktailActivity"
-            android:exported="false"
-            android:label="Cocktail"
-            android:parentActivityName=".WelcomePage">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".WelcomePage"/>
         </activity>
     </application>
 

@@ -54,7 +54,7 @@ public class ListAllFoodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.activity_main, container, false);
+        View rootView = inflater.inflate(R.layout.food_recyclerview, container, false);
 
         recyclerView = rootView.findViewById(R.id.recycle_view);
         adapter = new FoodAdapter(foodList, R.color.list_all_color);

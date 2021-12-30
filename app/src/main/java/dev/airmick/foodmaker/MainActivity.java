@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.Window;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback;
 
 import java.util.Arrays;
@@ -18,18 +20,19 @@ import dev.airmick.foodmaker.categoryFragments.ListAllFoodFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
-//        setExitSharedElementCallback(new MaterialContainerTransformSharedElementCallback());
-//        getWindow().setSharedElementsUseOverlay(false);
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_breakfast);
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.container, new ListAllFoodFragment())
-                .commit();
+        setContentView(R.layout.activity_main);
+
+        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager2);
+        CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs_layout);
+
+        tabLayout.setupWithViewPager(viewPager);
+
 
     }
 }

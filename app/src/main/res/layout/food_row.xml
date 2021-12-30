@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:clickable="true"
     android:focusable="true"
-    android:background="@color/lunch_color"
+    android:background="@color/primary_color"
     android:foreground="?android:attr/selectableItemBackground"
     android:orientation="horizontal">
 
