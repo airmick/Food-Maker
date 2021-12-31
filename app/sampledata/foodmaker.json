@@ -1,0 +1,66 @@
+{
+  "foodmakerData": [
+    {
+      "name": "apple juice",
+      "description": [
+        "details of the food",
+        "steps or direction of how to make the food"
+      ],
+      "image": "the png or jpeg image of the food",
+      "numberOfView": "243",
+      "link": "html://www.WhereToFindTheImage.com",
+      "level": [
+        "beginner",
+        "medium",
+        "advanced",
+        "pro"
+      ],
+      "timer": {
+        "preparation": "3 hours",
+        "cooking": "6 hours",
+        "total": "9 hours"
+      },
+      "nutrition_info": "http://nutritionInfo.info",
+      "publisher": {
+        "info": {
+          "details": [
+            "name",
+            "url_picture"
+          ],
+          "date_of_published": "2020-05-20"
+        }
+      }
+    },
+    {
+      "name": "apple juice",
+      "description": [
+        "details of the food",
+        "steps or direction of how to make the food"
+      ],
+      "image": "the png or jpeg image of the food",
+      "numberOfView": "243",
+      "link": "html://www.WhereToFindTheImage.com",
+      "level": [
+        "beginner",
+        "medium",
+        "advanced",
+        "pro"
+      ],
+      "timer": {
+        "preparation": "3 hours",
+        "cooking": "6 hours",
+        "total": "9 hours"
+      },
+      "nutrition_info": "http://nutritionInfo.info",
+      "publisher": {
+        "info": {
+          "details": [
+            "name",
+            "url_picture"
+          ],
+          "date_of_published": "2020-05-20"
+        }
+      }
+    }
+  ]
+}

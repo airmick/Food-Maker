@@ -19,4 +19,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Direction fragment</string>
     <string name="detail_fragment">Detail fragment</string>
+    <string name="level">Level</string>
+    <string name="prep_time">prep time:</string>
+    <string name="cook_time">Cook Time:</string>
+    <string name="yield">Yield:</string>
+    <string name="nutrition_info">Nutrition Info</string>
+    <string name="total_time">Total time:</string>
 </resources>
