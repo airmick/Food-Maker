@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/background_gradient.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.209375" />
         <entry key="app/src/main/res/drawable/media.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable/splash_background.xml" value="0.209375" />
         <entry key="app/src/main/res/layout/activity_breakfast.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_food.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_food_display.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_lunch.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_searchable.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/activity_welcome_page.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/description_fragment_layer.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/food_recyclerview.xml" value="0.19322916666666667" />
@@ -25,6 +30,7 @@
         <entry key="app/src/main/res/layout/fragment_lunch.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_steps.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/menu/top_app_bar.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.209375" />
       </map>
     </option>
   </component>
