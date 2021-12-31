@@ -17,7 +17,7 @@ To filter the research of the App, I split it into five categories of food.
 <image src="https://user-images.githubusercontent.com/32387739/147839111-5d2511be-f53e-407f-93d9-7cffff34c1d7.jpg" width=25% height=25%>
 <image src="https://user-images.githubusercontent.com/32387739/147839114-6731d642-48d6-4bdf-b756-669340f88f3e.jpg" width=25% height=25%>
 
-to check the demo of the video [link](https:www.youtube.com) to watch the demo.
+to check the demo of the video [link](https://youtu.be/qqC5Sk2hfcg) to watch the demo.
 
 ```
 Minimum version support is android api 27
