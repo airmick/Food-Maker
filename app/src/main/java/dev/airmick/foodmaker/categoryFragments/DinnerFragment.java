@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import dev.airmick.foodmaker.Food;
@@ -66,6 +67,7 @@ public class DinnerFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.food_recyclerview, container, false);
+        Collections.sort(foodList);
         recyclerView = rootView.findViewById(R.id.recycle_view);
         adapter = new FoodAdapter(foodList, R.color.dinner_color);
         layoutManager = new LinearLayoutManager(getActivity());

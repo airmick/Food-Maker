@@ -1,6 +1,8 @@
 package dev.airmick.foodmaker;
 
-public class Food {
+import java.util.Comparator;
+
+public class Food implements Comparable<Food>{
     private String mFoodName;
     private String mFoodDescription;
     private int mFoodImage;
@@ -29,5 +31,13 @@ public class Food {
                 "mFoodName='" + mFoodName + '\'' +
                 ", mFoodDescription='" + mFoodDescription + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Food food) {
+        if (getFoodName() == null || food.getFoodName() == null) {
+            return 0;
+        }
+        return getFoodName().compareToIgnoreCase(food.getFoodName());
     }
 }

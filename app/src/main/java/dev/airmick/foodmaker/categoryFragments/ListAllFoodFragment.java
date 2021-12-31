@@ -51,11 +51,11 @@ public class ListAllFoodFragment extends Fragment {
             new Food("Cassoulet", "Bien que cette spécialité française soit originaire du Languedoc, on associe bien volontiers ce plat de cuisine traditionnelle française à la ville de Toulouse. Le cassoulet est un plat délicieux, mais calorique – il est notamment composé de haricots blancs, de confit de canard et de saucisse. C’est le plat idéal à manger en hiver.",
                     R.drawable.lunch_five),
             new Food("Huîtres", "Principalement cultivées dans le bassin de Marennes-Oléron, les huîtres sont l’un des mets les plus consommés lors des fêtes de fin d’année. Que serait la gastronomie française sans nos célèbres fruits de mer ?",
-                    R.drawable.breakfast_two),
+                    R.drawable.dinner_two),
             new Food("Gratin dauphinois", "Pour préparer cette spécialité du Dauphiné, vous n’aurez besoin que de pommes de terres, de la crème fraîche et éventuellement un peu de ciboulette fraîche. Ce plat s’intègre parfaitement dans la cuisine traditionnelle française et peut se manger en tant que plat principal ou en accompagnement.",
                     R.drawable.dinner),
             new Food("Bœuf bourguignon", "Le bœuf bourguignon est l’un des plats les plus traditionnels (et les plus délicieux) de la gastronomie française. Pour préparer ce plat, il vous suffit de cuisiner du bœuf à petit feu dans du vin de Bourgogne. Accompagnez la viande avec des garnitures fraîches (champignons, pomme de terre vapeur, carotte…) et vous aurez la certitude de faire un bon repas.",
-                    R.drawable.dinner_two),
+                    R.drawable.breakfast_two),
             new Food("Eggs", "They’re an excellent source of protein, which helps support muscle synthesis. Since protein takes a while to digest, it also helps keep you feeling full",
                     R.drawable.dinner),
             new Food("Greek yogurt", "Certain types are good sources of probiotics like Bifidobacteria, which support your digestion. To make sure that your yogurt contains probiotics, look for the phrase “contains live and active cultures” on the label",
@@ -83,7 +83,57 @@ public class ListAllFoodFragment extends Fragment {
             new Food("Protein shakes", "If you’re short on time or want to take your breakfast on the go, protein shakes or smoothies are a great option.",
                     R.drawable.dinner_two),
             new Food("Fruit", "All fruits are relatively low in calories and contain good amounts of fiber and simple sugars. The fiber in fruit helps slow your body’s absorption of its sugars, giving you a steady source of energy",
-                    R.drawable.dinner_two)
+                    R.drawable.dinner_two),
+            new Food("PIÑA COLADA", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.pina_colada),
+            new Food("COCKTAIL GIN ET TONIC", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cocktail_gin_et_tonic),
+            new Food("MARGARITA", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "2 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.margarita),
+            new Food("COCKTAIL NEGRONI", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "5 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.breakfast_one),
+            new Food("COCKTAIL MARTINI DRY", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cocktail_martini_ry),
+            new Food("CUBA LIBRE", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "2 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cuba_libre),
+            new Food("COSMOPOLITAN", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "10 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cosmopolitan),
+            new Food("COCKTAIL OLD FASHIONED", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "10 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cocktail_old_fashioned),
+            new Food("MOJITO : LA RECETTE ORIGINALE", "6 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "5 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.mojito),
+            new Food("COCKTAIL MANHATTAN AU BOURBON", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Assez cher",
+                    R.drawable.the_perfect_manhattan)
     );
 
     public ListAllFoodFragment() {
@@ -95,6 +145,7 @@ public class ListAllFoodFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.food_recyclerview, container, false);
+        Collections.sort(foodList);
 
         recyclerView = rootView.findViewById(R.id.recycle_view);
         adapter = new FoodAdapter(foodList, R.color.list_all_color);

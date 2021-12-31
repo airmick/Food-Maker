@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import dev.airmick.foodmaker.Food;
@@ -36,11 +37,11 @@ public class BreakfastFragment extends Fragment {
             new Food("Cassoulet", "Bien que cette spécialité française soit originaire du Languedoc, on associe bien volontiers ce plat de cuisine traditionnelle française à la ville de Toulouse. Le cassoulet est un plat délicieux, mais calorique – il est notamment composé de haricots blancs, de confit de canard et de saucisse. C’est le plat idéal à manger en hiver.",
                     R.drawable.lunch_five),
             new Food("Huîtres", "Principalement cultivées dans le bassin de Marennes-Oléron, les huîtres sont l’un des mets les plus consommés lors des fêtes de fin d’année. Que serait la gastronomie française sans nos célèbres fruits de mer ?",
-                    R.drawable.breakfast_two),
+                    R.drawable.dinner_two),
             new Food("Gratin dauphinois", "Pour préparer cette spécialité du Dauphiné, vous n’aurez besoin que de pommes de terres, de la crème fraîche et éventuellement un peu de ciboulette fraîche. Ce plat s’intègre parfaitement dans la cuisine traditionnelle française et peut se manger en tant que plat principal ou en accompagnement.",
                     R.drawable.dinner),
             new Food("Bœuf bourguignon", "Le bœuf bourguignon est l’un des plats les plus traditionnels (et les plus délicieux) de la gastronomie française. Pour préparer ce plat, il vous suffit de cuisiner du bœuf à petit feu dans du vin de Bourgogne. Accompagnez la viande avec des garnitures fraîches (champignons, pomme de terre vapeur, carotte…) et vous aurez la certitude de faire un bon repas.",
-                    R.drawable.dinner_two),
+                    R.drawable.breakfast_two),
             new Food("Eggs", "They’re an excellent source of protein, which helps support muscle synthesis. Since protein takes a while to digest, it also helps keep you feeling full",
                     R.drawable.dinner),
             new Food("Greek yogurt", "Certain types are good sources of probiotics like Bifidobacteria, which support your digestion. To make sure that your yogurt contains probiotics, look for the phrase “contains live and active cultures” on the label",
@@ -72,6 +73,7 @@ public class BreakfastFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.food_recyclerview, container, false);
+        Collections.sort(foodList);
 
         recyclerView = rootView.findViewById(R.id.recycle_view);
         adapter = new FoodAdapter(foodList, R.color.breakfast_color);
