@@ -24,18 +24,56 @@ public class CocktailFragment extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
 
     private List<Food> foodList = Arrays.asList(
-            new Food("Apple", "fruits",
-                    R.drawable.dinner),
-            new Food("Orange", "my favorite one",
-                    R.drawable.dinner_two),
-            new Food("Pineapple", "once eaten never get tired of it.",
-                    R.drawable.lunch_three),
-            new Food("Coconut", "dark fruits",
+            new Food("PIÑA COLADA", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.pina_colada),
+            new Food("COCKTAIL GIN ET TONIC", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cocktail_gin_et_tonic),
+            new Food("MARGARITA", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "2 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.margarita),
+            new Food("COCKTAIL NEGRONI", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "5 minutes de préparation\n" +
+                    "Bon marché",
                     R.drawable.breakfast_one),
-            new Food("Tomatoes", "my favorite one again",
-                    R.drawable.lunch_six),
-            new Food("Lemon", "very interesting fruit.",
-                    R.drawable.lunch_one)
+            new Food("COCKTAIL MARTINI DRY", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cocktail_martini_ry),
+            new Food("CUBA LIBRE", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "2 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cuba_libre),
+            new Food("COSMOPOLITAN", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "10 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cosmopolitan),
+            new Food("COCKTAIL OLD FASHIONED", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "10 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.cocktail_old_fashioned),
+            new Food("MOJITO : LA RECETTE ORIGINALE", "6 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "5 minutes de préparation\n" +
+                    "Bon marché",
+                    R.drawable.mojito),
+            new Food("COCKTAIL MANHATTAN AU BOURBON", "1 personnes\n" +
+                    "Niveau : Très facile\n" +
+                    "3 minutes de préparation\n" +
+                    "Assez cher",
+                    R.drawable.the_perfect_manhattan)
     );
 
     public CocktailFragment() {

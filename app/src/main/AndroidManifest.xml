@@ -19,32 +19,24 @@
             </intent-filter>
 
         </activity>
+
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:launchMode="singleTop">
-
-            <meta-data
-                android:name="android.app.default_searchable"
-                android:value=".SearchableActivity" />
-        </activity>
-        <activity
-            android:name=".FoodActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity">
-
-        </activity>
-        <activity
-            android:name=".SearchableActivity"
             android:exported="false"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
-
             <meta-data
                 android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
+                android:resource="@xml/searchable"/>
+        </activity>
+
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+
         </activity>
     </application>
 

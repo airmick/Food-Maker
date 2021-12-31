@@ -13,6 +13,7 @@ import android.app.SearchManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -24,34 +25,20 @@ import com.google.android.material.transition.platform.MaterialContainerTransfor
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 import dev.airmick.foodmaker.categoryFragments.BreakfastFragment;
 import dev.airmick.foodmaker.categoryFragments.ListAllFoodFragment;
 
 public class MainActivity extends AppCompatActivity {
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the options menu from xml
-        MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.menu.top_app_bar, menu);
-
-        // Get the SearchView and set the searchable configuration
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        ComponentName componentName = new ComponentName(this, SearchableActivity.class);
-        SearchView searchView = (SearchView) menu.findItem(R.id.app_bar_search).getActionView();
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName));
-
-        searchView.setIconifiedByDefault(false);
-
-        return true;
-    }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // define the Toolbar
+        MaterialToolbar toolbar = (MaterialToolbar) findViewById(R.id.topAppBar);
+        setSupportActionBar(toolbar);
 
         // Add viewPager
         ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager2);
@@ -63,4 +50,29 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.top_app_bar, menu);
+
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                Log.d("MainActivity", "onQueryTextChange: "+newText);
+                return false;
+            }
+        });
+
+        return super.onCreateOptionsMenu(menu);
+    }
+
 }

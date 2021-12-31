@@ -179,6 +179,7 @@
                         android:layout_height="match_parent"
                         android:padding="8dp"
                         android:gravity="center_vertical"
+                        android:textAppearance="?android:textAppearanceMedium"
                         android:text="@string/level" />
                     <TextView
                         android:id="@+id/easy_food_activity_textview"
@@ -186,6 +187,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:padding="8dp"
+                        android:textStyle="bold"
                         android:text="Easy" />
                 </LinearLayout>
                 <LinearLayout
@@ -198,13 +200,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical"
-                        android:padding="8dp"
+                        android:textAppearance="?android:textAppearanceMedium"
                         android:text="@string/prep_time" />
                     <TextView
                         android:id="@+id/prep_time_food_activity_textview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
+                        android:textStyle="bold"
                         android:padding="8dp"
                         android:text="20 min" />
                 </LinearLayout>
@@ -217,7 +220,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:textAppearance="?android:textAppearanceMedium"
                         android:text="@string/cook_time" />
                     <TextView
                         android:id="@+id/cook_time_food_activity_textview"
@@ -225,6 +228,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textStyle="bold"
                         android:padding="8dp"
                         android:text="20 min" />
                 </LinearLayout>
@@ -237,7 +241,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:textAppearance="?android:textAppearanceMedium"
                         android:text="@string/total_time" />
                     <TextView
                         android:id="@+id/total_time_food_activity_textview"
@@ -245,6 +249,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textStyle="bold"
                         android:padding="8dp"
                         android:text="40 min" />
                 </LinearLayout>
@@ -257,6 +262,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
                         android:padding="8dp"
                         android:text="@string/yield" />
                     <TextView
@@ -265,6 +271,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:textStyle="bold"
                         android:padding="8dp"
                         android:text="5 Servings" />
                 </LinearLayout>
@@ -272,10 +279,13 @@
                     android:id="@+id/nutrition_info_food_activity_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
                     android:layout_gravity="center"
                     android:textColor="#ff0000"
                     android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAppearance="?android:textAppearanceMedium"
                     android:text="@string/nutrition_info" />
 
             </LinearLayout>

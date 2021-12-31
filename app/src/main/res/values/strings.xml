@@ -12,7 +12,7 @@
     <string name="category_dinner">Dinner</string>
     <string name="category_dessert">Dessert</string>
     <string name="category_cocktail">Cocktail</string>
-    <string name="search">Search food here…</string>
+    <string name="search">Search food</string>
     <string name="settings">Settings</string>
     <string name="add_new_food">Add new food</string>
     <string name="app_info">Info</string>
@@ -20,9 +20,9 @@
     <string name="hello_blank_fragment">Direction fragment</string>
     <string name="detail_fragment">Detail fragment</string>
     <string name="level">Level</string>
-    <string name="prep_time">prep time:</string>
-    <string name="cook_time">Cook Time:</string>
-    <string name="yield">Yield:</string>
-    <string name="nutrition_info">Nutrition Info</string>
-    <string name="total_time">Total time:</string>
+    <string name="prep_time">Prep time</string>
+    <string name="cook_time">Cook time</string>
+    <string name="yield">Yield</string>
+    <string name="nutrition_info">Nutrition info</string>
+    <string name="total_time">Total time</string>
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/fragment_detail_textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:paddingTop="16dp"
         android:text="@string/detail_fragment" />
 
 </FrameLayout>
